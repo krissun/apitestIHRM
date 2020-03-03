@@ -1,0 +1,7 @@
+[
+  {"case_name":"登陆成功","mobile": "13800000002","password": "123456", "http_code": 200,"success": true,"code": 10000,"message": "操作成功"},
+  {"case_name":"用户名不存在","mobile": "13900000002","password": "123456", "http_code": 200,"success": false,"code": 20001,"message": "用户名或密码错误"},
+  {"case_name":"测试密码错误","mobile": "13800000002","password": "1234567", "http_code": 200,"success": false,"code": 20001,"message": "用户名或密码错误"},
+  {"case_name":"用户名为空","mobile": "","password": "123456", "http_code": 200,"success": false,"code": 20001,"message": "用户名或密码错误"},
+  {"case_name":"密码为空","mobile": "13800000002","password": "", "http_code": 200,"success": false,"code": 20001,"message": "用户名或密码错误"}
+]
