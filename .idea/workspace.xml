@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06dd1dc9-5cdc-4801-9adf-c0c6ac65b428" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/emp.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/login_parms2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/ihrm.log.2020-03-06_16-36-40" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/ihrm.log.2020-03-06_19-07-57" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/ihrm.log.2020-03-06_19-08-22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/20200306190837.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/login_params.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/test_emp_parms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/apitestIHRM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apitestIHRM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/emp_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/emp_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/login_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/login_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/employee.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/ihrm.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/ihrm.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/ihrm.log.2020-03-03_13-03-38" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/ihrm.log.2020-03-03_13-04-27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/ihrm.log.2020-03-03_13-04-39" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_suite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/test_emp.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/test_emp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="06dd1dc9-5cdc-4801-9adf-c0c6ac65b428" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/report/20200306190837.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="38" column="82" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+            <state relative-caret-position="132">
+              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -217,7 +192,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test3.6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -226,7 +201,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.22660479" />
   </component>
   <component name="RecentsManager">
@@ -352,11 +327,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.utils" />
+      <item itemvalue="Python.run_suite" />
       <item itemvalue="Python tests.Unittests for test_emp_parms.TestEmp" />
       <item itemvalue="Python tests.Unittests for login_params.TestIhrmLogin" />
       <item itemvalue="Python tests.Unittests for test_emp.TestEmp" />
-      <item itemvalue="Python.utils" />
-      <item itemvalue="Python.run_suite" />
     </list>
     <recent_temporary>
       <list>
@@ -381,8 +356,16 @@
       <workItem from="1583116886094" duration="39680000" />
       <workItem from="1583210705690" duration="10000" />
       <workItem from="1583338319583" duration="5858000" />
-      <workItem from="1583475378441" duration="7924000" />
+      <workItem from="1583475378441" duration="8446000" />
     </task>
+    <task id="LOCAL-00001" summary="更新参数化,suite,以及报告生成">
+      <created>1583497504906</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583497504906</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -418,17 +401,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101657000" />
+    <option name="totallyTimeSpent" value="102179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12405446" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36824876" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36824876" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -449,6 +433,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新参数化,suite,以及报告生成" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新参数化,suite,以及报告生成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -739,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/report/20200306190837.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="38" column="82" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+        <state relative-caret-position="132">
+          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
         </state>
       </provider>
     </entry>
