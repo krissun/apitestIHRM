@@ -5,7 +5,8 @@ from logging import handlers
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 HOST = "http://182.92.81.159"
-HEADERS = {"Content-Type":"application/json"}
+HEADERS = None
+EMP_ID =""
 
 # 1.定义一个初始化日志配置的函数, 初始化日志的输出路径(例如,输出到控制台和文件中)
 def init_logging():

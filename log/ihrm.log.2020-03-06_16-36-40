@@ -1,0 +1,10 @@
+2020-03-06 16:36:39,328 INFO [root] [__init__.py(<module>:14)] - 测试日志是否正常打印
+2020-03-06 16:36:39,562 INFO [root] [test_emp_parms.py(test02_login_success:30)] - 员工模块的登陆结果为:{'success': True, 'code': 10000, 'message': '操作成功！', 'data': '714ae969-5a04-451d-900f-cdc375df6dab'}
+2020-03-06 16:36:39,562 INFO [root] [test_emp_parms.py(test02_login_success:36)] - 取出的令牌为:Bearer 714ae969-5a04-451d-900f-cdc375df6dab
+2020-03-06 16:36:39,562 INFO [root] [test_emp_parms.py(test02_login_success:37)] - 请求头为:{'Content-Type': 'application/json', 'Authorization': 'Bearer 714ae969-5a04-451d-900f-cdc375df6dab'}
+2020-03-06 16:36:39,665 INFO [root] [test_emp_parms.py(test03_add_emp:47)] - 添加员工的结果是:{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1235846764707532800'}}
+2020-03-06 16:36:39,665 INFO [root] [test_emp_parms.py(test03_add_emp:50)] - 添加员工的id是1235846764707532800
+2020-03-06 16:36:39,765 INFO [root] [test_emp_parms.py(test04_find_emp:57)] - 查询员工的结果为:{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1235846764707532800', 'mobile': '13099998888', 'username': 'Rose', 'password': '4b6c198a3258abda48e20fb51bea2bf1', 'enableState': 1, 'createTime': None, 'companyId': '1', 'companyName': '传智播客', 'departmentId': '1205026005332635648', 'timeOfEntry': '2020-02-01T00:00:00.000+0000', 'formOfEmployment': 1, 'workNumber': None, 'formOfManagement': None, 'workingCity': None, 'correctionTime': '2020-02-03T16:00:00.000+0000', 'inServiceStatus': None, 'departmentName': '酱油2部', 'roleIds': [], 'staffPhoto': None}}
+2020-03-06 16:36:39,861 INFO [root] [test_emp_parms.py(test05_modify_emp:67)] - 修改员工的结果为:{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1235846764707532800'}}
+2020-03-06 16:36:40,116 INFO [root] [test_emp_parms.py(test05_modify_emp:75)] - 数据库查询结果为:apple
+2020-03-06 16:36:40,217 INFO [root] [test_emp_parms.py(test06_del_emp:89)] - 删除员工的结果为:{'success': True, 'code': 10000, 'message': '操作成功！', 'data': None}

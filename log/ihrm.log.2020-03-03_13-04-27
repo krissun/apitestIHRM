@@ -1,9 +1,0 @@
-2020-03-03 13:04:27,401 INFO [root] [__init__.py(<module>:14)] - 测试日志是否正常打印
-2020-03-03 13:04:27,616 INFO [root] [test_emp.py(test01_emp_management:34)] - 员工的登陆模块为:{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'acf0b068-d629-422a-9447-1eec515f392f'}
-2020-03-03 13:04:27,616 INFO [root] [test_emp.py(test01_emp_management:34)] - 员工的登陆模块为:{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'acf0b068-d629-422a-9447-1eec515f392f'}
-2020-03-03 13:04:27,616 INFO [root] [login_api.py(get_headers:22)] - 取出的令牌为Bearer acf0b068-d629-422a-9447-1eec515f392f
-2020-03-03 13:04:27,616 INFO [root] [login_api.py(get_headers:22)] - 取出的令牌为Bearer acf0b068-d629-422a-9447-1eec515f392f
-2020-03-03 13:04:27,616 INFO [root] [test_emp.py(test01_emp_management:37)] - 员工模块请求头为:{'Content-Type': 'application/json', 'Authorization': 'Bearer acf0b068-d629-422a-9447-1eec515f392f'}
-2020-03-03 13:04:27,616 INFO [root] [test_emp.py(test01_emp_management:37)] - 员工模块请求头为:{'Content-Type': 'application/json', 'Authorization': 'Bearer acf0b068-d629-422a-9447-1eec515f392f'}
-2020-03-03 13:04:27,715 INFO [root] [test_emp.py(test01_emp_management:40)] - 添加员工接口的结果为:{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
-2020-03-03 13:04:27,715 INFO [root] [test_emp.py(test01_emp_management:40)] - 添加员工接口的结果为:{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}

@@ -10,10 +10,12 @@ import pymysql
 import requests
 import time
 
+from parameterized import parameterized
+
 import app
 from API.emp_api import Employee
 from API.login_api import LoginApi
-from utils import common_assert, DBUtils
+from utils import common_assert, DBUtils, read_add_emp_data, read_emp_data
 
 
 class TestEmp(unittest.TestCase):
@@ -33,34 +35,43 @@ class TestEmp(unittest.TestCase):
         app.HEADERS = headers
         logging.info("取出的令牌为:{}".format(token))
         logging.info("请求头为:{}".format(headers))
-        print(33)
         common_assert(self, response_login, 200, True, 10000, "操作成功")
     # 添加员工
-    def test03_add_emp(self):
-        mobile = "179"+time.strftime("%d%H%M%S")
-        name ="rose"+time.strftime("%d%H%M%S")
-        response_add_emp = self.emp_api.add_emp(name, mobile, app.HEADERS)
+    @parameterized.expand(read_add_emp_data())
+    def test03_add_emp(self,case_name,username,mobile,http_code,success,code,message):
+        # ('添加员工', 'Rose', '13099998888', 200, True, 10000, '操作成功')
+
+        # mobile1 = "179"+time.strftime("%d%H%M%S")
+        # name1 ="rose"+time.strftime("%d%H%M%S")
+        response_add_emp = self.emp_api.add_emp(username, mobile, app.HEADERS)
         logging.info("添加员工的结果是:{}".format(response_add_emp.json()))
         emp_id =response_add_emp.json().get("data").get("id")
         app.EMP_ID =emp_id
         logging.info("添加员工的id是{}".format(app.EMP_ID))
-        common_assert(self,response_add_emp,200,True,10000,"操作成功")
+        common_assert(self,response_add_emp,http_code,success,code,message)
 
-    def test04_find_emp(self):
+#"find_emp":{"case_name":"查询员工","http_code":200,"success":true,"code":10000,"message":"操作成功"},
+    @parameterized.expand(read_emp_data('find_emp'))
+    def test04_find_emp(self,case_name,http_code,success,code,message):
         response_find_emp = self.emp_api.find_emp(app.EMP_ID, app.HEADERS)  #小写headers有个同名模块,容易进坑
         logging.info("查询员工的结果为:{}".format(response_find_emp.json()))
-        common_assert(self,response_find_emp,200,True,10000,"操作成功")
+        common_assert(self,response_find_emp,http_code,success,code,message)
 
-    def test05_modify_emp(self):
-        response_modify_emp = self.emp_api.modify_emp(app.EMP_ID,"happy",app.HEADERS)
+
+
+    # "modify_emp": {"case_name": "修改员工", "new_name": "apple", "http_code": 200, "success": true, "code": 10000,
+    #                "message": "操作成功"},
+    @parameterized.expand(read_emp_data('modify_emp'))
+    def test05_modify_emp(self,case_name,new_name,http_code,success,code,message):
+        response_modify_emp = self.emp_api.modify_emp(app.EMP_ID,new_name,app.HEADERS)
         logging.info("修改员工的结果为:{}".format(response_modify_emp.json()))
-        common_assert(self,response_modify_emp,200,True,10000,"操作成功")
+        common_assert(self,response_modify_emp,http_code,success,code,message)
 
         with DBUtils() as db:
             sql = 'select username from bs_user where id ={}'.format(app.EMP_ID)
             db.execute(sql)
             result = db.fetchone()
-            self.assertEqual("happy", result[0])
+            self.assertEqual("apple", result[0])
             logging.info("数据库查询结果为:{}".format(result[0]))
 
         # # 连接数据库
@@ -71,10 +82,12 @@ class TestEmp(unittest.TestCase):
         # result = cursor.fetchone()
         # self.assertEqual("happy",result[0])
 
-    def test06_del_emp(self):
+    # "del_emp": {"case_name": "删除员工", "http_code": 200, "success": true, "code": 10000, "message": "操作成功"}
+    @parameterized.expand(read_emp_data('del_emp'))
+    def test06_del_emp(self,case_name,http_code,success,code,message):
         response_del_emp =self.emp_api.del_emp(app.EMP_ID, app.HEADERS)
         logging.info("删除员工的结果为:{}".format(response_del_emp.json()))
-        common_assert(self,response_del_emp,200,True,10000,"操作成功")
+        common_assert(self,response_del_emp,http_code,success,code,message)
         self.assertEqual(None,response_del_emp.json().get("data"))
 
 

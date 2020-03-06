@@ -1,6 +1,9 @@
 import requests
 import unittest
 # 创建API类
+from app import HEADERS, EMP_ID
+
+
 class Employee:
     def __init__(self):
         pass
